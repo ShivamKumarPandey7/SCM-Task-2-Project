@@ -29,3 +29,7 @@ body {
   font-size: 16px;
 }
 
+.heading h1 {
+  text-shadow: var(--color-shadow);
+  font-size: 6.2em;
+  font-weight: 800;}
