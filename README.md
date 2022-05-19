@@ -13,3 +13,13 @@ function countdown() {
   let oneDay = 24 * oneHr;
 
   let addZeroes = (num) => (num < 10 ? `0${num}` : num);
+if (endTime < todayTime) {
+    clearInterval(i);
+    document.querySelector(
+      ".countdown"
+    ).innerHTML = `<h1>Countdown Has Expired</h1>`;
+  } else {
+    let daysLeft = Math.floor(remainingTime / oneDay);
+    let hrsLeft = Math.floor((remainingTime % oneDay) / oneHr);
+    let minsLeft = Math.floor((remainingTime % oneHr) / oneMin);
+    let secsLeft = Math.floor((remainingTime % oneMin) / 1000);
